@@ -85,7 +85,10 @@
       <image compression="off"/>
       <mouse mode="server"/>
     </graphics>
-    <sound model="ich9"/>
+    <sound model="ich9">
+      <audio id='1'/>
+    </sound>
+    <audio id='1' type='spice'/>
     <video>
       <model type="qxl"/>
     </video>
@@ -101,5 +104,9 @@
         <address domain="0" bus="1" slot="0" function="1"/>
       </source>
     </hostdev>
+    <shmem name='looking-glass'>
+      <model type='ivshmem-plain'/>
+      <size unit='M'>512</size>
+    </shmem>
   </devices>
 </domain>
