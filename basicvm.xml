@@ -78,6 +78,8 @@
     <channel type="spicevmc">
       <target type="virtio" name="com.redhat.spice.0"/>
     </channel>
+    <input type="mouse" bus="virtio"/>
+    <input type="keyboard" bus="virtio"/>
     <tpm>
       <backend type="passthrough">
         <device path="/dev/tpm0"/>
