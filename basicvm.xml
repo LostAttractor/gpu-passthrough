@@ -53,18 +53,6 @@
       <source file="/var/lib/libvirt/images/win11.qcow2"/>
       <target dev="vda" bus="virtio"/>
     </disk>
-    <disk type="file" device="cdrom">
-      <driver name="qemu" type="raw"/>
-      <source file="/run/media/lostattractor/Ventoy/image/Win11_22H2_Chinese_Simplified_x64v1.iso"/>
-      <target dev="sdb" bus="sata"/>
-      <readonly/>
-    </disk>
-    <disk type="file" device="cdrom">
-      <driver name="qemu" type="raw"/>
-      <source file="/run/media/lostattractor/Ventoy/image/virtio-win-0.1.229.iso"/>
-      <target dev="sdc" bus="sata"/>
-      <readonly/>
-    </disk>
     <controller type="usb" model="qemu-xhci" ports="15"/>
     <controller type="pci" model="pcie-root"/>
     <controller type="pci" model="pcie-root-port"/>
