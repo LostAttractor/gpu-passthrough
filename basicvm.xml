@@ -72,6 +72,7 @@
     <interface type="network">
       <source network="default"/>
       <mac address="52:54:00:5e:5a:cc"/>
+      <model type="virtio"/>
     </interface>
     <console type="pty"/>
     <channel type="spicevmc">
