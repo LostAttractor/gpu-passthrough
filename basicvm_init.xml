@@ -46,9 +46,9 @@
   <devices>
     <emulator>/run/libvirt/nix-emulators/qemu-system-x86_64</emulator>
     <disk type="file" device="disk">
-      <driver name="qemu" type="qcow2" discard="unmap"/>
+      <driver name="qemu" type="qcow2"/>
       <source file="/var/lib/libvirt/images/win11.qcow2"/>
-      <target dev="vda" bus="virtio"/>
+      <target dev="sda" bus="scsi"/>
     </disk>
     <disk type="file" device="cdrom">
       <driver name="qemu" type="raw"/>
@@ -78,6 +78,7 @@
     <controller type="pci" model="pcie-root-port"/>
     <controller type="pci" model="pcie-root-port"/>
     <controller type="pci" model="pcie-root-port"/>
+    <controller type="scsi" model="virtio-scsi"/>
     <interface type="network">
       <source network="default"/>
       <mac address="52:54:00:5e:5a:cc"/>
