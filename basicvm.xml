@@ -35,6 +35,7 @@
   </features>
   <cpu mode="host-passthrough">
     <topology sockets="1" cores="8" threads="2"/>
+    <feature policy='disable' name='hypervisor'/> 
   </cpu>
   <clock offset="localtime">
     <timer name="rtc" tickpolicy="catchup"/>
