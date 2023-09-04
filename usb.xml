@@ -1,0 +1,21 @@
+    <hostdev mode="subsystem" type="usb" managed="yes">
+      <source>
+        <vendor id="0x046d"/>
+        <product id="0xc539"/>
+      </source>
+      <address type="usb" bus="0" port="3"/>
+    </hostdev>
+    <hostdev mode="subsystem" type="usb" managed="yes">
+      <source>
+        <vendor id="0x05ac"/>
+        <product id="0x024f"/>
+      </source>
+      <address type="usb" bus="0" port="4"/>
+    </hostdev>
+    <hostdev mode="subsystem" type="usb" managed="yes">
+      <source>
+        <vendor id="0x0a73"/>
+        <product id="0x002b"/>
+      </source>
+      <address type="usb" bus="0" port="5"/>
+    </hostdev>
